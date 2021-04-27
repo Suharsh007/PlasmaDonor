@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donor">
+    <TextView
+        android:id="@+id/tvDetail"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Enter Donor Details"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDetail"
+        android:padding="5dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edit_text_baackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Enter donor name"
+        android:inputType="text"
+        />
+
+
+
+    <EditText
+        android:id="@+id/etBloodGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_baackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter donor blood group"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBloodGroup"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@drawable/edit_text_baackground"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="Enter donor location"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/etPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLocation"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/edit_text_baackground"
+        android:inputType="number"
+        android:hint="Enter donor phone number"/>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPhoneNumber"
+        android:text="Submit"
+        android:background="@drawable/round_btn"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>
