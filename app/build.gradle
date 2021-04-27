@@ -4,6 +4,7 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
+    final BUILD_DATE = new Date().format('dd_MM_yyyy_HH_mm')
 
     defaultConfig {
         applicationId "com.alaksh"
@@ -13,6 +14,7 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        setProperty("archivesBaseName", "Alaksh-$BUILD_DATE-$versionName")
     }
 
     buildTypes {
